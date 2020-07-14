@@ -1,0 +1,147 @@
+create database banco;
+
+CREATE TABLE `banco`.`produtos` (
+
+  `id` INT NOT NULL AUTO_INCREMENT,
+  
+  `nome` VARCHAR(150) NOT NULL,
+
+  `preco` DECIMAL(10,2) NOT NULL,
+
+  PRIMARY KEY (`id`));
+
+
+CREATE TABLE `banco`.`vendas` (
+
+  `id` INT NOT NULL AUTO_INCREMENT,
+
+  `valor` DECIMAL(10,2) NOT NULL,
+
+  `mesa` INT NOT NULL,
+
+  `data` VARCHAR(20) NULL,
+
+  PRIMARY KEY (`id`));
+insert into produtos (nome,preco) values ("Hamburguer",8);
+insert into produtos (nome,preco) values ("X-Burguer",9);
+insert into produtos (nome,preco) values ("X-Salada",12);
+insert into produtos (nome,preco) values ("X-Egg Bacon",17);
+insert into produtos (nome,preco) values ("X-Salada Bacon",16);
+insert into produtos (nome,preco) values ("X-Salada Egg",15);
+insert into produtos (nome,preco) values ("X-Tudo",26);
+insert into produtos (nome,preco) values ("Frango",12);
+insert into produtos (nome,preco) values ("X-Frango",14);
+insert into produtos (nome,preco) values ("X-Frango Salada",15);
+insert into produtos (nome,preco) values ("X-Frango Bacon",17);
+insert into produtos (nome,preco) values ("X-Frango Calabresa",17);
+insert into produtos (nome,preco) values ("X-Frango Egg",17);
+insert into produtos (nome,preco) values ("X-Frango Tudo",24);
+insert into produtos (nome,preco) values ("X-Calabresa",14);
+insert into produtos (nome,preco) values ("X-Calabresa Salada",15);
+insert into produtos (nome,preco) values ("X-Calabresa Egg",16);
+insert into produtos (nome,preco) values ("X-Calavresa Bacon",17);
+insert into produtos (nome,preco) values ("X-Calabresa Tudo",24);
+insert into produtos (nome,preco) values ("Filé",17);
+insert into produtos (nome,preco) values ("X-Filé",19);
+insert into produtos (nome,preco) values ("X-Filé Salada",21);
+insert into produtos (nome,preco) values ("X-Filé Bacon",24);
+insert into produtos (nome,preco) values ("X-Filé Calabresa",26);
+insert into produtos (nome,preco) values ("X-Filé Egg",23);
+insert into produtos (nome,preco) values ("X-Filé Tudo",28);
+insert into produtos (nome,preco) values ("Trem",16);
+insert into produtos (nome,preco) values ("Trem Bala",15);
+insert into produtos (nome,preco) values ("Metrô",18);
+insert into produtos (nome,preco) values ("Locomotiva",17);
+insert into produtos (nome,preco) values ("Maria Fumaça",18);
+insert into produtos (nome,preco) values ("Estação Tudo",28);
+insert into produtos (nome,preco) values ("Combo kids - Metrozinho",19);
+insert into produtos (nome,preco) values ("Hot Dog Simples",10);
+insert into produtos (nome,preco) values ("Hot Dog Calabresa",12);
+insert into produtos (nome,preco) values ("Hot Dog Carne",12);
+insert into produtos (nome,preco) values ("Misto Quente",10);
+insert into produtos (nome,preco) values ("Vegetariano",16);
+
+insert into produtos (nome,preco) values ("Mussarela",26);
+insert into produtos (nome,preco) values ("Calabresa",28);
+insert into produtos (nome,preco) values ("Bacon",30);
+insert into produtos (nome,preco) values ("Francesa",30);
+insert into produtos (nome,preco) values ("Margarida",28);
+insert into produtos (nome,preco) values ("Catupiry",28);
+insert into produtos (nome,preco) values ("Atum",32);
+insert into produtos (nome,preco) values ("Milho Verde",29);
+insert into produtos (nome,preco) values ("A Moda à Estação",39);
+
+insert into produtos (nome,preco) values ("Água 500ml",4);
+insert into produtos (nome,preco) values ("Água 1,5L",8);
+insert into produtos (nome,preco) values ("Água 500 ml com Gás",5);
+insert into produtos (nome,preco) values ("Refrigerante Lata",5);
+insert into produtos (nome,preco) values ("Refrigerante 1L Vidro",8);
+insert into produtos (nome,preco) values ("Refrigerante 1L Descartável",9);
+insert into produtos (nome,preco) values ("Refrigerante 2L Descartável",10);
+insert into produtos (nome,preco) values ("Coca-Cola 2L",10);
+insert into produtos (nome,preco) values ("Coca-Cola 290ml",2.50);
+insert into produtos (nome,preco) values ("Coca-Cola 600ml Descartável ",7);
+insert into produtos (nome,preco) values ("Coca-Cola 600ml Vidro",6);
+insert into produtos (nome,preco) values ("Coca-Cola 1L Descartável",8);
+insert into produtos (nome,preco) values ("Coca-Cola 1L Vidro",9);
+insert into produtos (nome,preco) values ("Energético Monster Lata",10);
+insert into produtos (nome,preco) values ("H20",5);
+insert into produtos (nome,preco) values ("Água Tonica Lata",5);
+insert into produtos (nome,preco) values ("Suco Lata Del Valle",5);
+insert into produtos (nome,preco) values ("Abacaxi",6);
+insert into produtos (nome,preco) values ("Acerola",6);
+insert into produtos (nome,preco) values ("Caju",6);
+insert into produtos (nome,preco) values ("Cupuaçu",6);
+insert into produtos (nome,preco) values ("Frutas Vermelhas",6);
+insert into produtos (nome,preco) values ("Goiaba",6);
+insert into produtos (nome,preco) values ("Laranja",6);
+insert into produtos (nome,preco) values ("Limão", 6);
+insert into produtos (nome,preco) values ("Manga",6);
+insert into produtos (nome,preco) values ("Maracujá",6);
+insert into produtos (nome,preco) values ("Melão",6);
+insert into produtos (nome,preco) values ("Morango",6);
+insert into produtos (nome,preco) values ("Graviola",6);
+insert into produtos (nome,preco) values ("Abacaxi c/Hortelã",7);
+insert into produtos (nome,preco) values ("Laranja c/ Acerola",7);
+insert into produtos (nome,preco) values ("Mamão com Laranja",7);
+insert into produtos (nome,preco) values ("Suco Verde",6);
+insert into produtos (nome,preco) values ("Heineken",11);
+insert into produtos (nome,preco) values ("BudWalser 600ml",10);
+insert into produtos (nome,preco) values ("Cerveja  Lata",5);
+insert into produtos (nome,preco) values ("Cerveja 600ml",8);
+insert into produtos (nome,preco) values ("Malzibier Lata",11);
+insert into produtos (nome,preco) values ("Caracu",11);
+insert into produtos (nome,preco) values ("Tequila com Limão dose",12);
+insert into produtos (nome,preco) values ("Martine dose Vermelho",10);
+insert into produtos (nome,preco) values ("Whisky Dose Red Laber Passport",11);
+insert into produtos (nome,preco) values ("Whisky dose Natu Nobilis",11);
+insert into produtos (nome,preco) values ("Jurupinga Taça",12);
+insert into produtos (nome,preco) values ("Vinho Seco - Taça",9);
+insert into produtos (nome,preco) values ("Vinho Suave",9);
+insert into produtos (nome,preco) values ("Batida de Vinho - Morango ou Abacaxi",12);
+insert into produtos (nome,preco) values ("Caipirinha de pinga",10);
+insert into produtos (nome,preco) values ("Caipirinha de Saque",16);
+insert into produtos (nome,preco) values ("Caipirinha de Vodka",14);
+
+insert into produtos (nome,preco) values ("Batata Frita",23);
+insert into produtos (nome,preco) values ("Batata Frita Meia",17);
+insert into produtos (nome,preco) values ("Batata Frita C/Bacon e Cheddar",27);
+insert into produtos (nome,preco) values ("Batata Frita C/Bacon e Cheddar Meia",22);
+insert into produtos (nome,preco) values ("Mandioca Frita",20);
+insert into produtos (nome,preco) values ("Mandioca Frita Meia",15);
+insert into produtos (nome,preco) values ("Mandioca Frita C/Bacon e Cheddar ",25);
+insert into produtos (nome,preco) values ("Mandioca Frita C/Bacon e Cheddar Meia",20);
+insert into produtos (nome,preco) values ("Calabresa Acebolada",28);
+insert into produtos (nome,preco) values ("Calabresa Acebolada Meia",22);
+insert into produtos (nome,preco) values ("Porção à Estação",39);
+insert into produtos (nome,preco) values ("Porção à Estação Meia",35.90);
+insert into produtos (nome,preco) values ("Bolinho de Bacalhau",22);
+insert into produtos (nome,preco) values ("Frango à Passarinho",29);
+insert into produtos (nome,preco) values ("Frios",26);
+insert into produtos (nome,preco) values ("Frios Estação",35);
+insert into produtos (nome,preco) values ("Torresmo",22);
+insert into produtos (nome,preco) values ("Mine Kibes",15);
+insert into produtos (nome,preco) values ("Contra Filé Acebola",39.90);
+insert into produtos (nome,preco) values ("Contra Filé Acebola Meia",29.90);
+insert into produtos (nome,preco) values ("Isca de Tilápia",39);
+insert into produtos (nome,preco) values ("Isca de Tilápia Meia",29);
